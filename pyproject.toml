@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cdfm-base"
+version = "0.1.0"
+description = "CDFM: Towards a General-Purpose Causal Discovery Foundation Model"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Jie Qiao", email = "qiaojie.chn@gmail.com"},
+    {name = "Ruichu Cai"}
+]
+keywords = [
+    "causal-discovery",
+    "causal-inference",
+    "foundation-model",
+    "graph-discovery",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = [
+    "torch>=2.0",
+    "numpy>=1.20",
+    "safetensors",
+    "networkx",
+    "huggingface_hub",
+    "scikit-learn",
+]
+
+[project.optional-dependencies]
+dev = ["pandas", "scikit-learn", "matplotlib", "jupyter"]
+
+[project.urls]
+Homepage = "https://github.com/DMIRLAB-Group/CDFM"
+Repository = "https://github.com/DMIRLAB-Group/CDFM"
+"Bug Tracker" = "https://github.com/DMIRLAB-Group/CDFM/issues"
+Paper = "https://arxiv.org/abs/2607.11508"
+"HuggingFace" = "https://huggingface.co/DMIRLAB/CDFM"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["tests*"]
