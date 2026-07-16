@@ -13,7 +13,7 @@ Causal Discovery Foundation Model (CDFM) is a pretrained foundation model for ze
 CDFM reframes causal discovery as a unified, general-purpose framework for zero-shot structural inference. By pretraining on a massive, highly diverse space of synthetic structural causal models, CDFM successfully internalizes complex statistical asymmetries.
 
 <p align="center">
-  <img src="./docs/figures/benchmark_overview.png" width="85%" style="display: block; margin: auto;" alt="CDFM benchmark overview">
+  <img src="https://raw.githubusercontent.com/DMIRLAB-Group/CDFM/refs/heads/main/docs/figures/benchmark_overview.png" width="85%" style="display: block; margin: auto;" alt="CDFM benchmark overview">
 </p>
 
 - **State-of-the-art accuracy.** Outperforms all baselines across 15 mechanism families and on real-world benchmarks.
